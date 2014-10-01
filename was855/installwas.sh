@@ -32,4 +32,6 @@ echo "Installing WAS 8.5.5.3..."
 /opt/IBM/InstallationManager/eclipse/tools/imcl -acceptLicense -showProgress input /opt/was85.rsp -log /opt/logwas.log
 echo "Removing repos..."
 rm -Rf was8550repo was8553repo
+echo "Creating default profile..."
+/opt/IBM/WebSphere/AppServer/bin/manageprofiles.sh -create -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/default
 

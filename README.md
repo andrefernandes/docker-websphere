@@ -12,8 +12,18 @@ All install scripts assume that IBM repo files are available via HTTP (you
 are supposed to change URLs, of course). Download these files from IBM and
 unzip them some place where a HTTP server can grab them.
 
-The expected files are (as of this moment):
+The repo files downloaded by the script are (as of this moment):
 
 * agent.installer.linux.gtk.x86_64_1.6.2000.20130301_2248.zip (IBM IM install)
-* 
+* was.repo.8550.developers.ilan_part1.zip
+* was.repo.8550.developers.ilan_part2.zip
+* was.repo.8550.developers.ilan_part3.zip
+* 8.5.5-WS-WAS-FP0000003-part1.zip
+* 8.5.5-WS-WAS-FP0000003-part2.zip
+
+The Dockerfiles unpack and install their contents using IBM Installation
+Manager (they also install IBM Installation Manager, duh).
+
+By the end of it you'll have an 1.6G image with a base WAS 8.5.5.3 installed
+and a default profile "AppSrv01".
 
