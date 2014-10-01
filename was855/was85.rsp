@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<agent-input clean="true" temporary="true">
+<server>
+    <repository location='/opt/was8550repo'/>
+    <repository location='/opt/was8553repo'/>
+</server>
+<install>
+<offering id='com.ibm.websphere.DEVELOPERSILAN.v85'
+ profile='IBM WebSphere Application Server for Developers (ILAN) 8.5.5.3' />
+</install>
+<profile id='IBM WebSphere Application Server for Developers (ILAN) 8.5.5.3'
+ installLocation='/opt/IBM/WebSphere/AppServer'>
+<data key='eclipseLocation' value='/opt/IBM/WebSphere/AppServer'/>
+<data key='user.import.profile' value='false'/>
+<data key='cic.selector.nl' value='en'/>
+</profile>
+<preference name='com.ibm.cic.common.core.preferences.eclipseCache' value='/opt/IBM/IMShared'/>
+<preference name='com.ibm.cic.common.core.preferences.preserveDownloadedArtifacts' value='false'/>
+<preference name='com.ibm.cic.common.core.preferences.connectTimeout' value='30'/>
+<preference name='com.ibm.cic.common.core.preferences.readTimeout' value='45'/>
+<preference name='com.ibm.cic.common.core.preferences.downloadAutoRetryCount' value='0'/>
+<preference name='offering.service.repositories.areUsed' value='true'/>
+<preference name='com.ibm.cic.common.core.preferences.ssl.nonsecureMode' value='false'/>
+<preference name='com.ibm.cic.common.core.preferences.http.disablePreemptiveAuthentication' value='false'/>
+<preference name='http.ntlm.auth.kind' value='NTLM'/>
+<preference name='http.ntlm.auth.enableIntegrated.win32' value='true'/>
+<preference name='com.ibm.cic.common.core.preferences.keepFetchedFiles' value='false'/>
+<preference name='PassportAdvantageIsEnabled' value='false'/>
+<preference name='com.ibm.cic.common.core.preferences.searchForUpdates' value='false'/>
+<preference name='com.ibm.cic.agent.ui.displayInternalVersion' value='false'/>
+
+</agent-input>
+
