@@ -9,5 +9,12 @@ ADD was85.rsp /opt/was85.rsp
 
 RUN /opt/installwas.sh
 
-#CMD ["/opt/IBM/InstallationManager/eclipse/tools/imcl","-c"]
+ADD startserver.sh /opt/startserver.sh
+
+EXPOSE 9080
+EXPOSE 9060
+EXPOSE 9443
+EXPOSE 2809
+
+CMD ["/opt/startserver.sh"]
 
